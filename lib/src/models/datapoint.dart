@@ -115,6 +115,12 @@ class CurrentlyDataPoint extends DataPointBase {
   /// [optional] The air temperature in degrees Fahrenheit.
   double temperature;
 
+  /**
+   * [optional] The apparent (or “feels like”) temperature in degrees 
+   * Fahrenheit.
+   */
+  double apparentTemperature;
+
   CurrentlyDataPoint();
   factory CurrentlyDataPoint.fromJson(Map<String, dynamic> json) =>
       _$CurrentlyDataPointFromJson(json);
